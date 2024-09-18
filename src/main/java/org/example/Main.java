@@ -18,7 +18,7 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
-                        System.out.println("Para abrir una nueva cuenta, i");
+                        System.out.println("Para abrir una nueva cuenta, introduzca los siguientes datos:");
                 }
 
             } while (opcion != 0);
