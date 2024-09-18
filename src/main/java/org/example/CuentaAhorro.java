@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class CuentaAhorro extends CuentaBancaria {
     double tipoInteres;
@@ -20,18 +20,4 @@ public class CuentaAhorro extends CuentaBancaria {
         return null;
     }
 
-    @Override
-    public double comisionMantenimiento() {
-        return 0;
-    }
-
-    @Override
-    public double tipoInteresDescubierto() {
-        return 0;
-    }
-
-    @Override
-    public double maximoDescubierto() {
-        return 0;
-    }
 }

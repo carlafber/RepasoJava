@@ -48,7 +48,5 @@ public abstract class CuentaBancaria {
 
     public abstract double tipoInteres();
     public abstract ArrayList<String> listaEntidades();
-    public abstract double comisionMantenimiento();
-    public abstract double tipoInteresDescubierto();
-    public abstract double maximoDescubierto();
+
 }
