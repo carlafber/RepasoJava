@@ -18,6 +18,7 @@ public class Main {
 
                 switch (opcion) {
                     case 1:
+                        System.out.println("Para abrir una nueva cuenta, i");
                 }
 
             } while (opcion != 0);

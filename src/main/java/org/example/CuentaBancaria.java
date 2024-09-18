@@ -7,14 +7,6 @@ public abstract class CuentaBancaria {
     int saldo;
     String iban;
 
-    /*public CuentaBancaria() {
-        super();
-    }
-
-    public CuentaBancaria(Persona titular, int saldo, String iban) {
-        super(titular, saldo, iban);
-    }*/
-
     public CuentaBancaria(Persona titular, int saldo, String iban) {
         super();
         this.titular = titular;
