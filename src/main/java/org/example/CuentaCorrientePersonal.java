@@ -3,12 +3,12 @@ package org.example;
 public class CuentaCorrientePersonal extends CuentaCorriente {
     double comisionMantenimiento;
 
-    public CuentaCorrientePersonal(Persona titular, int saldo, String iban, double comisionMantenimiento) {
+    public CuentaCorrientePersonal(Persona titular, double saldo, String iban, double comisionMantenimiento) {
         super(titular, saldo, iban);
         this.comisionMantenimiento = comisionMantenimiento;
     }
 
-    @Override
+    /*@Override
     public double comisionMantenimiento() {
         return comisionMantenimiento;
     }
@@ -21,7 +21,7 @@ public class CuentaCorrientePersonal extends CuentaCorriente {
     @Override
     public double maximoDescubierto() {
         return 0;
-    }
+    }*/
 
     @Override
     public double tipoInteres() {

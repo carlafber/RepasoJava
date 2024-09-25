@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public abstract class CuentaBancaria {
     Persona titular;
-    int saldo;
+    double saldo;
     String iban;
 
-    public CuentaBancaria(Persona titular, int saldo, String iban) {
+    public CuentaBancaria(Persona titular, double saldo, String iban) {
         super();
         this.titular = titular;
         this.saldo = saldo;
@@ -22,11 +22,11 @@ public abstract class CuentaBancaria {
         this.titular = titular;
     }
 
-    public int getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 

@@ -5,7 +5,7 @@ import java.util.*;
 public class CuentaAhorro extends CuentaBancaria {
     double tipoInteres;
 
-    public CuentaAhorro(Persona titular, int saldo, String iban, double tipoInteres) {
+    public CuentaAhorro(Persona titular, double saldo, String iban, double tipoInteres) {
         super(titular, saldo, iban);
         this.tipoInteres = tipoInteres;
     }

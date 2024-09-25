@@ -5,7 +5,7 @@ import java.util.*;
 public abstract class CuentaCorriente extends CuentaBancaria {
     ArrayList<String> listaEntidades;
 
-    public CuentaCorriente(Persona titular, int saldo, String iban) {
+    public CuentaCorriente(Persona titular, double saldo, String iban) {
         super(titular, saldo, iban);
     }
 
@@ -14,7 +14,8 @@ public abstract class CuentaCorriente extends CuentaBancaria {
         return listaEntidades;
     }
 
-    public abstract double comisionMantenimiento();
+    /*public abstract double comisionMantenimiento();
     public abstract double tipoInteresDescubierto();
     public abstract double maximoDescubierto();
+    public abstract double comisionFijaDescubierto();*/
 }
