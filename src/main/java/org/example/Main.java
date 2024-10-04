@@ -37,6 +37,9 @@ public class Main {
                                 System.out.print("Para crear una cuenta de ahorro, introduzca el tipo de interés de remuneración:");
                                 double tipo_interes = in.nextDouble();
                                 CuentaBancaria cuentaBancaria = new CuentaAhorro(persona, saldo, iban, tipo_interes);
+                                if(Banco.abrirCuenta(cuentaBancaria)) {
+                                    System.out.println("Cuenta de ahorro abierta correctamente.");
+                                }
                                 break;
                             case 2:
                                 System.out.print("Para crear una cuenta corriente personal");
