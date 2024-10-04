@@ -42,7 +42,7 @@ public class Main {
                                 }
                                 break;
                             case 2:
-                                System.out.print("Para crear una cuenta corriente personal--");
+                                System.out.print("Para crear una cuenta corriente personal");
                         }
                         break;
                     case 2:
