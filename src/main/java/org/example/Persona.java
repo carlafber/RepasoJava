@@ -1,6 +1,6 @@
 package org.example;
 
-public class Persona {
+public class Persona implements Imprimible{
     String nombre;
     String apellidos;
     String dni;
@@ -35,8 +35,9 @@ public class Persona {
         this.dni = dni;
     }
 
+
     @Override
-    public String toString() {
+    public String devolverInfoString() {
         return nombre + " " + apellidos + " (DNI: " + dni + ")";
     }
 }
