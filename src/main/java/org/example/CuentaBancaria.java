@@ -37,8 +37,7 @@ public abstract class CuentaBancaria implements Imprimible {
         this.iban = iban;
     }
 
-    /*public abstract double tipoInteres();
-    public abstract ArrayList<String> listaEntidades();*/
+
     public void ingresar(double cantidad) {
         saldo += cantidad;
     }

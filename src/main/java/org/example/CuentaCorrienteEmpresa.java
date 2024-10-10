@@ -1,14 +1,13 @@
 package org.example;
 
-import java.util.ArrayList;
 
 public class CuentaCorrienteEmpresa extends CuentaCorriente {
     double tipoInteresDescubierto;
     double maximoDescubierto;
     double comisionFijaDescubierto;
 
-    public CuentaCorrienteEmpresa(Persona titular, double saldo, String iban, double tipoInteresDescubierto, double maximoDescubierto, double comisionFijaDescubierto) {
-        super(titular, saldo, iban);
+    public CuentaCorrienteEmpresa(Persona titular, double saldo, String iban, String listaEntidades ,double tipoInteresDescubierto, double maximoDescubierto, double comisionFijaDescubierto) {
+        super(titular, saldo, iban, listaEntidades);
         this.tipoInteresDescubierto = tipoInteresDescubierto;
         this.maximoDescubierto = maximoDescubierto;
         this.comisionFijaDescubierto = comisionFijaDescubierto;
@@ -27,7 +26,6 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
     @Override
     public String devolverInfoString() {
         return "Cuenta Corriente Empresa - IBAN: " + iban + ", Titular: " + titular.toString() +
-                ", Saldo: " + saldo + ", Máximo Descubierto: " + maximoDescubierto +
-                ", Entidades Autorizadas: " + listaEntidadestoString();
+                ", Saldo: " + saldo + ", Máximo Descubierto: " + maximoDescubierto;
     }
 }

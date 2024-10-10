@@ -1,10 +1,12 @@
 package org.example;
 
 public class Persona implements Imprimible{
+    //atributos de la clase
     String nombre;
     String apellidos;
     String dni;
 
+    //constructor para inicializar los atributos
     public Persona(String nombre, String apellidos, String dni) {
         this.nombre = nombre;
         this.apellidos = apellidos;
