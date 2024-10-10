@@ -38,6 +38,9 @@ public class Persona implements Imprimible{
     }
 
 
+    //Implementación del metodo devolverInfoString() de la interfaz Imprimible
+    // Este metodo devuelve la información completa de la persona en formato de cadena
+    // Concatena el nombre, apellidos y el DNI en una cadena de caracteres
     @Override
     public String devolverInfoString() {
         return nombre + " " + apellidos + " (DNI: " + dni + ")";
