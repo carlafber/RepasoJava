@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class CuentaCorrienteEmpresa extends CuentaCorriente {
     double tipoInteresDescubierto;
     double maximoDescubierto;
@@ -12,23 +14,20 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
         this.comisionFijaDescubierto = comisionFijaDescubierto;
     }
 
-    /*@Override
-    public double comisionMantenimiento() {
-        return 0;
+    @Override
+    public boolean retirar(double cantidad) {
+        if (saldo + maximoDescubierto >= cantidad) {
+            saldo -= cantidad;
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
-    public double tipoInteresDescubierto() {
-        return tipoInteresDescubierto;
-    }
-
-    @Override
-    public double maximoDescubierto() {
-        return maximoDescubierto;
-    }*/
-
-    @Override
-    public double tipoInteres() {
-        return 0;
+    public String devolverInfoString() {
+        return "Cuenta Corriente Empresa - IBAN: " + iban + ", Titular: " + titular.toString() +
+                ", Saldo: " + saldo + ", Máximo Descubierto: " + maximoDescubierto +
+                ", Entidades Autorizadas: " + listaEntidadestoString();
     }
 }

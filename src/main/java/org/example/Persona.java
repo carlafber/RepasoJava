@@ -2,12 +2,12 @@ package org.example;
 
 public class Persona {
     String nombre;
-    String apellido;
+    String apellidos;
     String dni;
 
-    public Persona(String nombre, String apellido, String dni) {
+    public Persona(String nombre, String apellidos, String dni) {
         this.nombre = nombre;
-        this.apellido = apellido;
+        this.apellidos = apellidos;
         this.dni = dni;
     }
 
@@ -19,12 +19,12 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
     public String getDni() {
@@ -37,11 +37,7 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", dni='" + dni + '\'' +
-                '}';
+        return nombre + " " + apellidos + " (DNI: " + dni + ")";
     }
 }
 

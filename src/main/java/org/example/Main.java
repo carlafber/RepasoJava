@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Banco banco = new Banco(); // Crear instancia de Banco
+        Banco banco = new Banco();
         int opcion = -1;
 
         try {
@@ -16,7 +16,7 @@ public class Main {
                         "\n  ---------------------------------------------\n  0. SALIR  ");
                 System.out.print("Seleccione una opción: ");
                 opcion = in.nextInt();
-                in.nextLine(); // Limpiar buffer del scanner
+                in.nextLine();
 
                 switch (opcion) {
                     case 1:

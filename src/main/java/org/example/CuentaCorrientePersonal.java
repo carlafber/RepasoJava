@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class CuentaCorrientePersonal extends CuentaCorriente {
     double comisionMantenimiento;
 
@@ -8,23 +10,10 @@ public class CuentaCorrientePersonal extends CuentaCorriente {
         this.comisionMantenimiento = comisionMantenimiento;
     }
 
-    /*@Override
-    public double comisionMantenimiento() {
-        return comisionMantenimiento;
-    }
-
     @Override
-    public double tipoInteresDescubierto() {
-        return 0;
-    }
-
-    @Override
-    public double maximoDescubierto() {
-        return 0;
-    }*/
-
-    @Override
-    public double tipoInteres() {
-        return 0;
+    public String devolverInfoString() {
+        return "Cuenta Corriente Personal - IBAN: " + iban + ", Titular: " + titular.toString() +
+                ", Saldo: " + saldo + ", Comisión Mantenimiento: " + comisionMantenimiento +
+                ", Entidades Autorizadas: " + listaEntidadestoString();
     }
 }

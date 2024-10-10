@@ -11,13 +11,8 @@ public class CuentaAhorro extends CuentaBancaria {
     }
 
     @Override
-    public double tipoInteres() {
-        return tipoInteres;
+    public String devolverInfoString() {
+        return "Cuenta Ahorro - IBAN: " + iban + ", Titular: " + titular.toString() +
+                ", Saldo: " + saldo + ", Interés Anual: " + tipoInteres;
     }
-
-    @Override
-    public ArrayList<String> listaEntidades() {
-        return null;
-    }
-
 }
